@@ -1,0 +1,53 @@
+.card {
+  display: flex;
+  background: #fff;
+  padding: 15px 25px;
+  border-radius: 25px;
+}
+.card-content {
+  padding: 45px 15px;
+  max-width: 80%;
+  color: hsl(235, 18%, 26%);
+}
+.card-content > ul > li {
+  padding-bottom: 10px;
+  color: hsl(235, 18%, 26%);
+}
+.card-content > ul {
+  margin-left: -20px;
+}
+.card-content > h1 {
+  color: hsl(234, 29%, 20%);
+  font-size: 3rem;
+}
+.card-subtitle {
+  margin-top: -15px;
+}
+.card-content > .card-email {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+}
+input {
+  padding: 15px;
+  width: 350px;
+  outline: none;
+  border-radius: 10px;
+  color: hsl(235, 18%, 26%);
+  font-size: 1rem;
+}
+button {
+  padding: 20px;
+  margin-top: 20px;
+  width: 385px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: hsl(234, 29%, 20%);
+  color: white;
+  font-size: 1rem;
+}
+button:hover {
+  transition: 0.3s;
+  background: hsl(4, 100%, 67%);
+}
