@@ -5,3 +5,11 @@ body {
   height: 100vh;
   background: hsl(234, 29%, 20%);
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    background: none;
+    padding: 0;
+  }
+}
