@@ -12,6 +12,8 @@
 .card-content > ul > li {
   padding-bottom: 10px;
   color: hsl(235, 18%, 26%);
+  list-style-image: url(../assets/images/icon-list.svg);
+  list-style-position: outside;
 }
 .card-content > ul {
   margin-left: -20px;
@@ -34,6 +36,8 @@ input {
   border-radius: 10px;
   color: hsl(235, 18%, 26%);
   font-size: 1rem;
+  cursor: pointer;
+  font-weight: 400;
 }
 button {
   padding: 20px;
@@ -50,4 +54,16 @@ button {
 button:hover {
   transition: 0.3s;
   background: hsl(4, 100%, 67%);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+  .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
