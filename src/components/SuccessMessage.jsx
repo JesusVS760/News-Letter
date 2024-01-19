@@ -13,8 +13,8 @@ export const SuccessMessage = ({ email }) => {
           <span className="emailSent">{email} </span>. Please open it and click
           the button inside to confirm your subscription
         </p>
+        <button>Dismiss message</button>
       </div>
-      <button>Dismiss message</button>
     </div>
   );
 };
