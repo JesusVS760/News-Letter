@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "./components/Card";
 import "./App.css";
-import MobileCard from "./components/MobileCard";
+import { SuccessMessage } from "./components/SuccessMessage";
 
 export default function App() {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const [email, setEmail] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   return (
-    <div className="container">{isMobile ? <Card /> : <MobileCard />}</div>
+    <div className="container">
+      {isSubmitted ? (
+        <SuccessMessage email={email} />
+      ) : (
+        <Card setEmail={setEmail} setSubmitted={setIsSubmitted} email={email} />
+      )}
+    </div>
   );
 }
